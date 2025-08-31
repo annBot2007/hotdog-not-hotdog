@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotdog or Not Hotdog?</title>
+</head>
+<body>
+    <h1>🌭 Hotdog or Not Hotdog? 🤔</h1>
+    <form method="post" action="{{ url_for('upload') }}" enctype="multipart/form-data">
+        <input type="file" name="file" accept="image/*" required>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
